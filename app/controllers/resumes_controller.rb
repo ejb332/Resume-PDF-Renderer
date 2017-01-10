@@ -7,12 +7,21 @@ class ResumesController < ApplicationController
   # end
 
   def show
-    # @student = Unirest.get(
-    #   "#{ENV['API_BASE_URL']}/student/#{params[:id]}",
+    # @resume = Unirest.get(
+    #   "#{ENV['API_BASE_URL']}/resume/#{params[:id]}",
     #   headers: HEADERS,
     # ).body
-
-    render 'show.html.erb'
+    # @resume = 
+    #   respond_to do |format|
+    #     format.html
+    #     format.pdf do
+    #       pdf = ResumePdf.new(@resume, view_context)
+    #       send_data pdf.render, filename: 
+    #       "resume.pdf",
+    #       type: "application/pdf", 
+    #       disposition: "inline"
+    #     end
+    #   end
   end
 
 end
