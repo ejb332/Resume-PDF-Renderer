@@ -1,5 +1,5 @@
 class ResumesController < ApplicationController
-  HEADERS = { 'Authorization' => "Token token=#{ENV['API_KEY']}", 'X-User-Email' => ENV['API_EMAIL'] }
+  # HEADERS = { 'Authorization' => "Token token=#{ENV['API_KEY']}", 'X-User-Email' => ENV['API_EMAIL'] }
 
   # def index
   #   puts 'hello world'
