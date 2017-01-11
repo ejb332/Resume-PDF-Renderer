@@ -1,1 +1,5 @@
-index.html.erb
+<h3><% @resumes.each do |resume| %>
+  <%= resume.name %></br>
+  <%= resume.email %>
+<% end %>
+</h3>
