@@ -1,11 +1,16 @@
 class ResumesController < ApplicationController
   # HEADERS = { 'Authorization' => "Token token=#{ENV['API_KEY']}", 'X-User-Email' => ENV['API_EMAIL'] }
 
-  def index
-    @resumes = Resume.all
-    render 'index.html.erb'
-  end
+  # def index
+  #   @resumes = Resume.all
+  #   render 'index.html.erb'
+  # end
 
+  def index
+    @resume = Hash.new
+    @resume["first_name"] = "Eric"
+    @resume["last_name"] = "Biel"
+  end
   # def show
   #   @resume = Unirest.get(
   #     "#{ENV['API_BASE_URL']}/resume/#{params[:id]}",
